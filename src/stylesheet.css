@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: Verdana;
+	background-image: url("img/background.jpg");
+}
+
+h2 {
+	text-align: center;
+	font-family: cursive;
+}
+
+li {
+	text-align: center;
+}
+
+canvas {
+	padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-left: 270px;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+	/* border: 1px solid #F1F1F1; */
+}
+
+#container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#sidebar {
+	-moz-box-shadow: 0 0 3px black;
+    -webkit-box-shadow: 0 0 3px black;
+    -o-box-shadow: 0 0 3px black;
+    box-shadow: 0 0 3px black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background: #34495e; */
+    background-image: url("img/sidebar-background.jpg");
+    background-repeat: repeat-y;
+    height: 100%;
+    width: 200px;
+    list-style: none;
+    color: #fff;
+    padding-top: 20px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+#game-name {
+	font-family: cursive;
+	font-size: 30px;
+	text-align: center;
+}
+
+#game-pairs {
+	margin: 10px 0;
+    text-align: center;
+}
+
+#game-time {
+	color: #333;
+    margin: 10px 0;
+    box-shadow: 0 0 1px #000;
+    background: #27ae60;
+    height: 40px;
+    padding-left: 20px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#game-stats {
+	font-size: 22px;
+}
+
+#congratulations {
+	font-family: cursive;
+	font-size: 22px;
+}
+
+.a-button {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #fff;
+}
+
+/********* CLEARFIX *********/
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+
+/* POP UP BUTTONS */
+.btn {
+	background-color: #f6f6f6;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(246, 246, 246)), to(rgb(225, 225, 225)));
+	background-image: -webkit-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+	background-image: -moz-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+	background-image: -o-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+	background-image: -ms-linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+	background-image: linear-gradient(top, rgb(246, 246, 246), rgb(225, 225, 225));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f6f6f6', EndColorStr='#e1e1e1');
+	border: 1px solid #ccc;
+	color:#555;
+	display:inline-block;
+	padding:5px 15px;
+	text-decoration:none;
+	text-shadow:0 2px rgba(255,255,255,.9);
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	box-shadow:0 1px rgba(0,0,0,.35);
+	-moz-box-shadow:0 1px rgba(0,0,0,.35);
+	-webkit-box-shadow:0 1px rgba(0,0,0,.35);
+}
+	.btn:active {
+		background-color: #f6f6f6;
+		background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(246, 246, 246)), to(rgb(225, 225, 225)));
+		background-image: -webkit-linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));
+		background-image: -moz-linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));
+		background-image: -o-linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));
+		background-image: -ms-linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));
+		background-image: linear-gradient(bottom, rgb(246, 246, 246), rgb(225, 225, 225));
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f6f6f6', EndColorStr='#e1e1e1');
+	}

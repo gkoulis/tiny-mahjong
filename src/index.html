@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta http-equiv="X-UA-Compatible" content="IE=9">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mahjong</title>        
+        <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+        <link type="text/css" rel="stylesheet" href="modal.css" />
+        <script type="text/javascript" src="mahjong.js"></script>
+    	<script type="text/javascript" src="stopwatch.js"></script>
+    </head>
+    <body onload="showStopwatch();">
+        <div id="container">
+        	<ul id="sidebar">
+        		<li id="game-name">Mahjong!</li>
+        		<li id="game-pairs">0 Pairs Remaining</li>
+        		<li id="game-time"></li>
+        		<li>
+        			<a href="#modal" class="a-button">New Game</a>
+        		</li>
+        		<br/>
+        		<li>
+        			<a href="index.html" class="a-button">Refresh</a>
+        		</li>
+        		<br/>
+        		<br/>
+        		<li id="game-stats"></li>
+        		<br/>
+        		<li id="total-moves"></li>
+        		<li id="right-options"></li>
+        		<li id="wrong-options"></li>
+        		<br/>
+        		<br/>
+        		<li id="congratulations"></li>
+        	</ul>
+        	<div id="game-wrapper">
+        		<canvas id="mahjong-game">
+        			This text is displayed if your browser does not support HTML5 Canvas.
+        		</canvas>
+        	</div>
+        </div>
+        
+        <!-- NEW GAME -->
+        <div id="modal">
+			<div class="modal-content">
+				<div class="header">
+					<h2>Let's play Mahjong!</h2>
+				</div>
+				<div class="copy">
+					<input id="user-input" type="text" placeholder="rows and columns" />
+				</div>
+				<div class="cf footer">
+					<a href="#" class="btn" onclick="checkUserInput(document.getElementById('user-input').value)" >Let's Play</a>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</div>
+    </body>
+</html>
